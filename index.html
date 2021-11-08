@@ -7,6 +7,8 @@
     <title>Sample Admin Pannel</title>
     <!--Boostrap link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!--style link-->
     <link href="assets/min-css/index.min.css" rel="stylesheet"/>
 </head>
@@ -15,7 +17,10 @@
         <nav class="navbar-vertical fixed-start navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
                 <!--logo-->
-                <a href="/" class="navbar-brand"><img class="navbar-brand-img" src="./assets/img/logo.svg" alt="..."></a>
+                <a href="/" class="navbar-brand">
+                    <img class="navbar-brand-img" src="./assets/img/logo.svg" alt="...">
+                    <h1>DecoMart</h1>
+                </a>
             </div>
         </nav>
         <!--main body-->
@@ -25,10 +30,19 @@
                 <div class="container">
                     <div  class="row">
                         <div class="search-lg">
-                            <ion-icon name="menu-outline"></ion-icon>
+                            <a href="#" class="menu-bar-icon">
+                                <ion-icon name="menu-outline"></ion-icon>
+                            </a>
+                            <div class="search">
+                                <form>
+                                    <input type="text">
+                                </form>
+                            </div>
                         </div>
                         <div class="head-menu">
-
+                            <div class="profile">
+                                my
+                            </div>
                         </div>
                     </div>
                 </div>

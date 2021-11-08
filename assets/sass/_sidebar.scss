@@ -23,16 +23,20 @@
     }
     .navbar-brand{
         display: flex;
-        text-align: center;
         align-items: center;
+        justify-content: center;
         margin-right: 0px;
         height: 70px;
         padding: 15px;
         border-bottom: 1px solid $theme_border_color;
         img{
-            display: inline-block;
-            text-align: center;
             max-height: 30px;
+        }
+        h1{
+            font-size: 28px;
+            margin-left: 10px;
+            font-weight: 600;
+            color: #6259ca;
         }
     }
 }

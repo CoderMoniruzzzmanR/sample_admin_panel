@@ -1,19 +1,35 @@
 .head{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
     height: 70px;
     border-bottom: 1px solid $theme_border_color;
+    .container{
+        height: 100%;
+        .row{
+            height: 100%;
+        }
+    }
     .search-lg{
         max-width: 40%;
-        .md.hydrated{
-            margin-top: 5px;
-            font-size: 32px;
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        .menu-bar-icon{
+            .md.hydrated{
+                margin-top: 5px;
+                font-size: 32px;
+            }
+        }
+        .search{
+            margin-left: 15px;
         }
     }
     .head-menu{
         max-width: 60%;
-        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        padding-right: 30px;
+        .profile{
+
+        }
     }
 }
