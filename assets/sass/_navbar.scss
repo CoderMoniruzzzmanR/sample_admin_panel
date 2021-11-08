@@ -28,8 +28,11 @@
         align-items: center;
         justify-content: right;
         padding-right: 30px;
-        .profile{
-
+        .menu-item{
+            margin-left: 15px;
+            &:first-child{
+                margin-left: 0px;
+            }
         }
     }
 }

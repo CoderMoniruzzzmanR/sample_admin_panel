@@ -45,6 +45,14 @@
   padding-right: 30px;
 }
 
+.head .head-menu .menu-item {
+  margin-left: 15px;
+}
+
+.head .head-menu .menu-item:first-child {
+  margin-left: 0px;
+}
+
 .navbar-vertical.navbar-expand-md {
   display: block;
   position: fixed;
