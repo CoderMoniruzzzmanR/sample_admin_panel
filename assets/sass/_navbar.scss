@@ -1,0 +1,19 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    border-bottom: 1px solid $theme_border_color;
+    .search-lg{
+        max-width: 40%;
+        .md.hydrated{
+            margin-top: 5px;
+            font-size: 32px;
+        }
+    }
+    .head-menu{
+        max-width: 60%;
+        margin-left: auto;
+    }
+}

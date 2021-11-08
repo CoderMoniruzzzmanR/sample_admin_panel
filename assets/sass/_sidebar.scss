@@ -1,0 +1,38 @@
+.navbar-vertical{
+    &.navbar-expand-md{
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 250px;
+        overflow-y: auto;
+        border-right: 1px solid $theme_border_color;
+        margin: 0px;
+        padding: 0px;
+    }
+    &.navbar-light{
+        background-color: $aside_bg_color;
+    }
+    .container-fluid{
+        flex-direction: column;
+        align-items: stretch;
+        min-height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .navbar-brand{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-right: 0px;
+        height: 70px;
+        padding: 15px;
+        border-bottom: 1px solid $theme_border_color;
+        img{
+            display: inline-block;
+            text-align: center;
+            max-height: 30px;
+        }
+    }
+}
