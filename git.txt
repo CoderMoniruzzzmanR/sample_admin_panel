@@ -1,3 +1,0 @@
-git remote add origin httpsgithub.comCoderMoniruzzzmanRsample_admin_panel.git
-git branch -M main
-git push -u origin main
