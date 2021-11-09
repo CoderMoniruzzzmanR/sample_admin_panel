@@ -1,7 +1,17 @@
 .wrapper{
     transition: margin-left .3s ease;
     margin-left: 250px;
-    .container{
-        max-width: 100%;
+    
+}
+
+.main-body{
+    margin-left: 0px;
+}
+@media only screen and (max-width: 767px) {
+    .wrapper{
+        margin-left: 0px;
     }
+    .main-body{
+        margin-left: 0px;
+    }   
 }

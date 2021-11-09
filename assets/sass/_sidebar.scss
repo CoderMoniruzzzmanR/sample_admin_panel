@@ -2,17 +2,17 @@
     &.navbar-expand-md{
         display: block;
         position: fixed;
-        top: 0;
+        top: 100px;
         bottom: 0;
         width: 100%;
         max-width: 250px;
         overflow-y: auto;
-        border-right: 1px solid $theme_border_color;
+        border-right: 1px solid var(--sidebar-border);
         margin: 0px;
         padding: 0px;
     }
     &.navbar-light{
-        background-color: $aside_bg_color;
+        background-color: var(--sidebar-bg);
     }
     .container-fluid{
         flex-direction: column;
@@ -28,7 +28,6 @@
         margin-right: 0px;
         height: 70px;
         padding: 15px;
-        border-bottom: 1px solid $theme_border_color;
         img{
             max-height: 30px;
         }
@@ -40,3 +39,26 @@
         }
     }
 }
+// .sidebar{
+//     transform: translate(0%);
+//     transition: all 0.3s linear 0s;;
+// }
+// .sidebaractive {
+//     transform: translate(-100%) !important;
+// }
+
+// @media only screen and (max-width: 767px) {
+//     .sidebar{
+//         transform: translate(-100%);
+//         transition: all 0.3s linear 0s;;
+//     }
+//     .sidebaractive {
+//         transform: translate(0%) !important;
+//     }    
+// }
+// .dark-theme{
+//     .sidebar{
+//         transform: translate(0%);
+//         transition: none;
+//     }
+// }

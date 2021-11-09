@@ -14,40 +14,60 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar-vertical fixed-start navbar navbar-expand-md navbar-light">
+
+        <nav class="navbar-vertical sidebar fixed-start navbar navbar-expand-md navbar-light">
             <div class="container-fluid">
-                <!--logo-->
-                <a href="/" class="navbar-brand">
-                    <img class="navbar-brand-img" src="./assets/img/logo.svg" alt="...">
-                    <h1>DecoMart</h1>
-                </a>
+                
+               
             </div>
         </nav>
-        <!--main body-->
+
+        <!--begin::wrapper-->
         <div class="wrapper">
-            <!--wrapper body header-->
-            <div class="head">
-                <div class="container">
-                    <div  class="row">
-                        <div class="search-lg">
-                            <a href="#" class="menu-bar-icon">
-                                <ion-icon name="menu-outline"></ion-icon>
-                            </a>
-                            <div class="search">
-                                <form>
-                                    <input type="text">
-                                </form>
-                            </div>
+            <!--begin::Header-->
+            <div class="header">
+                <div class="header-brand">
+                    <!--begin::Logo-->
+                    <a href="#">
+                        <img alt="Logo" src="./assets/img/logo.svg" class="logo">
+                    </a>
+                    <!--end::Logo-->
+                    <!--begin::dark-icon-->
+                    <div data-bs-toggle="tooltip" title="Dark Theme" class="dark-button">
+                        <img id="dark-icon" alt="moon dark icon image" src="./assets/img/moon-outline.svg" class="moon_dark">
+                    </div>
+                    <!--end::dark-icon-->
+                </div>
+                <!--begin::Toolbar-->
+                <div class="toolbar">
+                    <div class="container-fluid">
+                        <!--begin::Page-Title-->
+                        <div class="page-title">
+                            <!--begin::Title-->
+                            <h1>Dashboard</h1>
+                            <!--end::Title-->
+                            <!--begin::Breadcrumb-->
+                            <ul class="breadcrumb breadcrumb-separatorless">
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item">
+                                    <a href="#">Home</a>
+                                </li>
+                                <!--end::Item-->
+                                <!--begin::Item-->
+                                <li class="breadcrumb-item breadcrumb-active">Dashboard</li>
+                                <!--end::Item-->
+                            </ul>
+                            <!--end::Breadcrumb-->
                         </div>
-                        <div class="head-menu">
-                            <a class="menu-item">notification</a>
-                            <a class="menu-item">message</a>
-                            <a class="menu-item">profile</a>
-                        </div>
+                        <!--end::Page-Title-->
                     </div>
                 </div>
+                <!--end::Toolbar-->
             </div>
+            <!--end::Header-->
+
         </div>
+        <!--end::wrapper-->
     </div>
     
     <!--Boostrap scripts link-->
@@ -55,5 +75,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
