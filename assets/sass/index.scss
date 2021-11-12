@@ -2,32 +2,6 @@
 @import'./navbar';
 @import './sidebar';
 @import'./theme';
-:root{
-    --darkicon-bg: #f5f6fa;
-    --body-bg: #f9fbfd;
-    --box-bg-primary: #fff;
-    --header-bg: #f9fbfd;
-    --text-color-primary: #12263f;
-    --text-color-secondary: #12263f;
-    --border-primary : #e3ebf6;
-    --navbrand-bg : #fff;
-    --navbrand-border : #e3ebf6;
-    --sidebar-bg: #fff;
-    --sidebar-border: #e3ebf6;
-}
-.dark-theme{
-    --darkicon-bg: #17171E;
-    --border-primary : #2e2e42;
-    --body-bg: #17171E;
-    --header-bg:#17171E;
-    --navbrand-bg : #212130;
-    --navbrand-border : transparent;
-    --sidebar-bg: #212130;
-    --sidebar-border: transparent;
-    --text-color-primary: #fff;
-    --box-bg-primary: #fff;
-    --box-bg: #212130;
-}
 
 *{
     margin: 0px;
@@ -65,4 +39,21 @@ a{
 p{
     padding: 0px;
     margin: 0px;
+}
+.overlay-body-out{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    z-index: 109;
+    background-color: rgba(0,0,0,.2);
+    animation: animation-drawer-fade-in .3s ease-in-out 1;
+    display: none;
+}
+.overlay-body-in{
+    display: block;
 }

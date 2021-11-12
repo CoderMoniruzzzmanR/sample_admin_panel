@@ -1,12 +1,6 @@
-// let toggle_bar = document.querySelector(".menu-bar-icon");
-// let sidebar = document.querySelector(".sidebar");
-// let main_body = document.querySelector(".wrapper");
-// toggle_bar.addEventListener("click", function(){
-//     sidebar.classList.toggle("sidebaractive");
-//     main_body.classList.toggle("main-body");
-// });
 
 var dark_icon =  document.getElementById("dark-icon");
+var body_layer = document.getElementById("body-layer");
 dark_icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if( document.body.classList.contains("dark-theme")){
@@ -16,4 +10,11 @@ dark_icon.onclick = function(){
     else{
         dark_icon.src = "assets/img/moon-outline.svg";
     }
+}
+var toggle_bar = document.getElementById("mobile-toggle");
+var sidebar = document.getElementById("sidebar");
+toggle_bar.onclick = function () {
+    sidebar.classList.toggle("sidebar");
+    body_layer.classList.toggle("overlay-body-in");
+    toggle_bar.classList.toggle("mobile-icon-close");
 }
