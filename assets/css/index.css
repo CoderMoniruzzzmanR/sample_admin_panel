@@ -62,6 +62,7 @@
           align-items: center;
   background-color: var(--navbrand-bg);
   border-right: 1px solid var(--navbrand-border);
+  z-index: 999;
 }
 
 .header .header-brand a .logo {
@@ -333,25 +334,6 @@
   }
 }
 
-.wrapper {
-  -webkit-transition: margin-left .3s ease;
-  transition: margin-left .3s ease;
-  margin-left: 250px;
-}
-
-.main-body {
-  margin-left: 0px;
-}
-
-@media only screen and (max-width: 767px) {
-  .wrapper {
-    margin-left: 0px;
-  }
-  .main-body {
-    margin-left: 0px;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -399,6 +381,9 @@ p {
   margin: 0px;
 }
 
+/*===================
+    Body-layer
+=====================*/
 .overlay-body-out {
   position: fixed;
   width: 100%;
@@ -417,4 +402,23 @@ p {
 
 .overlay-body-in {
   display: block;
+}
+
+.wrapper {
+  -webkit-transition: margin-left .3s ease;
+  transition: margin-left .3s ease;
+  margin-left: 250px;
+}
+
+.main-body {
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .wrapper {
+    margin-left: 0px;
+  }
+  .main-body {
+    margin-left: 0px;
+  }
 }

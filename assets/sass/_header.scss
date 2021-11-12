@@ -18,6 +18,7 @@
         align-items: center;
         background-color: var(--navbrand-bg);
         border-right: 1px solid var(--navbrand-border);
+        z-index: 999;
         a{
             .logo{
                 max-width: 100%;
