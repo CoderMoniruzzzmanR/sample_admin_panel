@@ -18,3 +18,20 @@ toggle_bar.onclick = function () {
     body_layer.classList.toggle("overlay-body-in");
     toggle_bar.classList.toggle("mobile-icon-close");
 }
+let arrow = document.querySelectorAll(".nav-link");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+    let arrowParent = e.target.parentElement;
+    arrowParent.classList.toggle("is-expanded");
+    });
+}
+
+var eventFired = function ( type ) {
+    var n = document.querySelector('#table_id');
+    n.innerHTML += '<div>'+type+' event - '+new Date().getTime()+'</div>';
+    n.scrollTop = n.scrollHeight;     
+}
+ 
+document.addEventListener('DOMContentLoaded', function () {
+    let table = new DataTable('#table_id');
+});

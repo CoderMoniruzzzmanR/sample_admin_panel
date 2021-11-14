@@ -1,10 +1,20 @@
 @import './core';
-
+@import './components/card';
+@import './components/tables';
 
 .wrapper{
     transition: margin-left .3s ease;
     margin-left: 250px;
-    // max-width: calc(250px - 100%);
+    .container-fluid{
+        padding: 0px 30px;
+    }
+    .page-top-border{
+        border-top: 1px solid var(--border-primary);
+        margin: 0px 30px;
+    }
+    .wrapper-content{
+        margin-top: 30px;
+    }
 }
 
 .main-body{
@@ -13,6 +23,9 @@
 @media only screen and (max-width: 767px) {
     .wrapper{
         margin-left: 0px;
+        .wrapper-content{
+            margin-top: 15px;
+        }
     }
     .main-body{
         margin-left: 0px;
