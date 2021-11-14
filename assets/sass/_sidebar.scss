@@ -215,7 +215,7 @@
     .tooltip-arrow,
     .red-tooltip + .tooltip > .tooltip-inner {background-color: #f00;}
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
     .navbar-vertical{
         &.navbar-expand-md{
             display: block;
@@ -245,4 +245,7 @@
     //         }
     //     }
     // }
+}
+@media only screen and (max-width: 767px) {
+    
 }
