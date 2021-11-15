@@ -214,7 +214,7 @@
         height: auto;
         background-color: var(--header-bg);
         .header-brand{
-            position: relative;
+            position: fixed;
             top: 0;
             left: 0;
             height: 100px;
@@ -268,6 +268,7 @@
         }
        .toolbar{
            padding: 15px 0px;
+           margin-top: 100px;
        }
     }
 }
