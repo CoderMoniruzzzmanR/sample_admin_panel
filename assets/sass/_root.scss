@@ -52,6 +52,11 @@
         --action-hover-bg: #9e88f5 0,#6259ca;
         --action-hover-border: #6259ca;
     }
+    .footer{
+        --footer-border : #e3ebf6;
+        --footer-color-primary: #76839a;
+        --footer-color:#17171E;
+    }
 }
 .dark-theme{
     --darkicon-bg: #17171E;
@@ -91,5 +96,10 @@
         --action-hover-color: #fff;
         --action-hover-bg: #9e88f5 0,#6259ca;
         --action-hover-border: #6259ca;
+    }
+    .footer{
+        --footer-border : #2e2e42;
+        --footer-color-primary: #76839a;
+        --footer-color:#6259ca;
     }
 }
