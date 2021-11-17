@@ -57,6 +57,10 @@
         --footer-color-primary: #76839a;
         --footer-color:#17171E;
     }
+    .badge{
+        --bg-success-soft:#ccf7e5;
+        --success-softcolor :#00d97e;
+    }
 }
 .dark-theme{
     --darkicon-bg: #17171E;
@@ -101,5 +105,9 @@
         --footer-border : #2e2e42;
         --footer-color-primary: #76839a;
         --footer-color:#6259ca;
+    }
+    .badge{
+        --bg-success-soft:#00d97e;
+        --success-softcolor :#fff;
     }
 }

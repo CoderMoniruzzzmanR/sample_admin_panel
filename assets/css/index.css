@@ -63,6 +63,11 @@
   --footer-color:#17171E;
 }
 
+:root .badge {
+  --bg-success-soft:#ccf7e5;
+  --success-softcolor:#00d97e;
+}
+
 .dark-theme {
   --darkicon-bg: #17171E;
   --border-primary: #2e2e42;
@@ -112,6 +117,11 @@
   --footer-border: #2e2e42;
   --footer-color-primary: #76839a;
   --footer-color:#6259ca;
+}
+
+.dark-theme .badge {
+  --bg-success-soft:#00d97e;
+  --success-softcolor:#fff;
 }
 
 .header {
@@ -1014,6 +1024,10 @@ p {
   border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
+.card .card-body.boder-radius-around {
+  border-radius: 0.5rem 0.5rem;
+}
+
 .table {
   background-color: var(--table-bg);
   margin-bottom: 0rem;
@@ -1156,6 +1170,11 @@ p {
   }
 }
 
+.bg-success-soft {
+  background-color: var(--bg-success-soft);
+  color: var(--success-softcolor);
+}
+
 .wrapper {
   -webkit-transition: margin-left .3s ease;
   transition: margin-left .3s ease;
@@ -1178,6 +1197,10 @@ p {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: calc(100vh - 242px);
+}
+
+.wrapper .wrapper-content .heading h2 {
+  font-size: 18px;
 }
 
 .main-body {

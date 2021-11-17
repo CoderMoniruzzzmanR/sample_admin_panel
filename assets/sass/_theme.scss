@@ -1,7 +1,7 @@
 @import './core';
 @import './components/card';
 @import './components/tables';
-
+@import './components/badge';
 .wrapper{
     transition: margin-left .3s ease;
     margin-left: 250px;
@@ -17,6 +17,11 @@
         margin-bottom: 30px;
         flex: 1 1 auto;
         min-height: calc(100vh - 242px) ;
+        .heading{
+            h2{
+                font-size: 18px;
+            }
+        }
     }
 }
 
